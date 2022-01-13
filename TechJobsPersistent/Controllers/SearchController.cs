@@ -36,8 +36,8 @@ namespace TechJobsPersistent.Controllers
             if (string.IsNullOrEmpty(searchTerm))
             {
                 jobs = context.Jobs
-                   .Include(j => j.Employer)
-                   .ToList();
+                    .Include(j => j.Employer)
+                    .ToList();
 
                 foreach (var job in jobs)
                 {
